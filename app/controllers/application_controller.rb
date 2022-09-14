@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
       doctor_id: params[:doctor_id],
       patient_id: params[:patient_id],
     )
+    appointment.to_json
     
   end
 
